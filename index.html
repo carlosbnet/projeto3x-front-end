@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Login</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/styler.css" media="screen" />
+    <script src="https://kit.fontawesome.com/3edf037119.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/script.js"></script>
+    
+</head>
+
+<body>
+    <!-- Conteiner Principal Login -->
+    <div class="container">
+          
+            <div class="row login-form-area justify-content-center align-items-center" id="form">
+
+                <div  id="cicle" class="cicle-area"><img src="images/icon5.png" width="80" alt=""></div>
+                <div class="col-8 mt-5">
+
+                <form class="text-black" id="form-data">
+
+                                <div class="row  mt-3 ">
+                                    <div class="col-12  form-group">
+                                        <label for="user">Nome:</label>
+                                        <input type="text" class="form-control" maxlength="14" name="name" id="name">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">  <label>Qual tipo da Messagem?</label></div>
+                                </div>
+                                <div class="row mt-2">
+
+                                    <div class="col-6 form-group">
+                                                                          
+                                        <div class="input-group">
+
+                                            <div class="input-group-prepend">
+                                              <div class="input-group-text" style="border-radius: 5px;">
+                                                <input type="radio" aria-label="Radio button for following text input" checked id="customRadio1" name="customRadio" value="text">
+                                              </div>
+                                            </div>
+                                            <div class="" style="margin-left: 10px; margin-top: 3px; font-size: 17px;">Texto</div>
+                                            
+                                          </div>
+                                          
+                                        </div>
+
+                                        <div class="col-6 form-group">
+   
+                                            <div class="input-group ">
+    
+                                                <div class="input-group-prepend">
+                                                  <div class="input-group-text" style="border-radius: 5px;">
+                                                    <input type="radio" aria-label="Radio button for following text input" id="customRadio2" value="image" name="customRadio">
+                                                  </div>
+                                                </div>
+                                                <div class="" style="margin-left: 10px; margin-top: 3px; font-size: 17px;">Imagem</div>
+                                                
+                                              </div>
+                                              
+                                            </div>
+                                    </div>
+                                
+                                
+                                <div class="row mt-3" id="img">
+                                    <div class="col-12 form-group ">
+                                        <div> Escolha sua Figurinha!</div>
+
+
+                                        <div class="row mt-3">
+                                            <div class="col-6">
+                                                <input type="radio" aria-label="Radio button for following text input" id="img1" value="1" name="customRadioImg">
+                                               <img src="images/cEdDG.png" class="ml-3" alt="" width="100">
+                                            </div>
+                                            <div class="col-6">
+                                                <input type="radio" aria-label="Radio button for following text input" id="img2" value="2" name="customRadioImg">
+                                                 <img src="images/pe.png" alt="" class="ml-3" width="100"> 
+                                            </div>
+                                        </div>
+
+
+
+
+                                        <div class="row mt-4">
+                                            <div class="col-6">
+                                                <input type="radio" aria-label="Radio button for following text input" id="img3" value="3" name="customRadioImg">
+                                                 <img src="images/rosto.png" class="ml-3" alt="" width="85"> 
+                                            </div>
+                                            <div class="col-6">
+                                                <input type="radio" aria-label="Radio button for following text input" id="img4" value="4" name="customRadioImg">
+                                                 <img src="images/nave.png" alt="" class="ml-3" width="130">  
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                 <div class="row mt-3" id="textArea">
+                                    <div class="col-12 form-group ">
+                                        <span>Messagem:</span>
+                                            <div class="" style="float: right;">Caracteres restantes <b><span class="caracteres">80</span></b></div>
+                                        
+                                        <div class="input-group">
+                                            <textarea class="form-control contador" aria-label="With textarea" id="messagem" maxlength="80" rows="3" ></textarea>
+                                          </div>
+                                    </div>
+                                </div> 
+                                
+
+                                <div class="row text-center mt-4 ">
+                                    <div class="col-12 form-group">
+                                        <!-- <input type="image" src="images/botaosend.png" alt="" width="70" height="70"> -->
+                                      <button type="submit" id="buttonSign" class="btn btn-primary" class="btn-custom">Enviar</button> 
+                                    </div>
+                                </div>
+                                <div class="row text-center">
+                                    <div class="col-12 ">
+                                       <a id="forgot" href="http://" >Ajuda?</a>
+                                    </div>
+                                </div>
+                            </div>
+                </form>
+            </div>
+            </div>
+            
+         
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
