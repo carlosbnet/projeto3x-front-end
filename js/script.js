@@ -1,8 +1,32 @@
 
+var url_api = "https://app-aproject3xapi.herokuapp.com/api/v1/index/message";
 
-//var url_api = "https://app-project3xapi.herokuapp.com/api/v1/index/message";
+//var url_api = "https://app-aproject3xapi.herokuapp.com/api/v1/index/message";
 
-var url_api = "http://localhost:8080/api/v1/index/message";
+//var url_api = "http://localhost:8080/api/v1/index/message";
+
+var codigoMensagem = 0;
+var codigoMensagemTemp = 0;
+
+
+function getRandomArbitrary(min, max) {
+   
+    do{
+        
+        min = Math.ceil(min);
+        
+        max = Math.floor(max);
+        
+        codigoMensagemTemp = Math.floor(Math.random() * (max - min)) + min;
+        
+    }while(codigoMensagemTemp==codigoMensagem)
+  
+   return codigoMensagem = codigoMensagemTemp;
+  
+}
+
+
+
 
 
 
@@ -61,7 +85,9 @@ $(document).ready(function () {
 
         var data = JSON.stringify(createObj());
 
+
         console.log(data);
+
 
         request = $.ajax({
             url: url_api,
@@ -87,13 +113,14 @@ $(document).ready(function () {
             );
         });
 
+ 
+          // Callback handler that will be called regardless
+    // if the request failed or succeeded
+    request.always(function () {
+        // Reenable the inputs
+     //   $inputs.prop("disabled", false);
+    });
 
-        // Callback handler that will be called regardless
-        // if the request failed or succeeded
-        request.always(function () {
-            // Reenable the inputs
-
-        });
 
 
     });
@@ -108,8 +135,9 @@ function createObj() {
 
     obj.name = $("#name").val();
     obj.type = $("input[name='customRadio']:checked").val();
+    obj.codigoMSG = getRandomArbitrary(1,5000);
 
-    if (obj.type == "image") {
+    if (obj.type == "I") {
         
         var selectImage = $("input[name='customRadioImg']:checked").val();
 
