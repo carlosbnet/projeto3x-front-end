@@ -12,127 +12,203 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/styler.css" media="screen" />
     <script src="https://kit.fontawesome.com/3edf037119.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
-    
+
 </head>
 
 <body>
     <!-- Conteiner Principal Home -->
     <div class="container">
-          
-            <div class="row login-form-area justify-content-center align-items-center" id="form">
 
-                <div  id="cicle" class="cicle-area"><img src="images/icon5.png" width="80" alt=""></div>
-                <div class="col-8 mt-5">
+        <div class="row login-form-area justify-content-center align-items-center" id="form">
+
+            <div id="cicle" class="cicle-area"><img src="images/icon5.png" width="80" alt=""></div>
+            <div class="col-8 mt-5">
 
                 <form class="text-black" id="form-data">
 
-                                <div class="row  mt-3 ">
-                                    <div class="col-12  form-group">
-                                        <label for="user">Nome:</label>
-                                        <input type="text" class="form-control" maxlength="14" name="name" id="name">
+                    <div class="row  mt-3 ">
+                        <div class="col-12  form-group">
+                            <label for="user">Nome:</label>
+                            <input type="text" class="form-control" maxlength="14" name="name" id="name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col"> <label>Qual tipo da Messagem?</label></div>
+                    </div>
+                    <div class="row mt-2">
+
+                        <div class="col-6 form-group">
+
+                            <div class="input-group">
+
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text" style="border-radius: 5px;">
+                                        <input type="radio" aria-label="Radio button for following text input" checked
+                                            id="customRadio1" name="customRadio" value="T">
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col">  <label>Qual tipo da Messagem?</label></div>
-                                </div>
-                                <div class="row mt-2">
+                                <div class="" style="margin-left: 10px; margin-top: 3px; font-size: 17px;">Texto</div>
 
-                                    <div class="col-6 form-group">
-                                                                          
-                                        <div class="input-group">
+                            </div>
 
-                                            <div class="input-group-prepend">
-                                              <div class="input-group-text" style="border-radius: 5px;">
-                                                <input type="radio" aria-label="Radio button for following text input" checked id="customRadio1" name="customRadio" value="T">
-                                              </div>
-                                            </div>
-                                            <div class="" style="margin-left: 10px; margin-top: 3px; font-size: 17px;">Texto</div>
-                                            
-                                          </div>
-                                          
-                                        </div>
+                        </div>
 
-                                        <div class="col-6 form-group">
-   
-                                            <div class="input-group ">
-    
-                                                <div class="input-group-prepend">
-                                                  <div class="input-group-text" style="border-radius: 5px;">
-                                                    <input type="radio" aria-label="Radio button for following text input" id="customRadio2" value="I" name="customRadio">
-                                                  </div>
-                                                </div>
-                                                <div class="" style="margin-left: 10px; margin-top: 3px; font-size: 17px;">Imagem</div>
-                                                
-                                              </div>
-                                              
-                                            </div>
-                                    </div>
-                                
-                                
-                                <div class="row mt-3" id="img">
-                                    <div class="col-12 form-group ">
-                                        <div> Escolha sua Figurinha!</div>
+                        <div class="col-6 form-group">
 
+                            <div class="input-group ">
 
-                                        <div class="row mt-3">
-                                            <div class="col-6">
-                                                <input type="radio" aria-label="Radio button for following text input" id="img2" value="2" name="customRadioImg">
-                                               <img src="images/cEdDG.png" class="ml-3" alt="" width="100">
-                                            </div>
-                                            <div class="col-6">
-                                                <input type="radio" aria-label="Radio button for following text input" id="img3" value="3" name="customRadioImg">
-                                                 <img src="images/pe.png" alt="" class="ml-3" width="100"> 
-                                            </div>
-                                        </div>
-
-
-
-
-                                        <div class="row mt-4">
-                                            <div class="col-6">
-                                                <input type="radio" aria-label="Radio button for following text input" id="img4" value="4" name="customRadioImg">
-                                                 <img src="images/rosto.png" class="ml-3" alt="" width="85"> 
-                                            </div>
-                                            <div class="col-6">
-                                                <input type="radio" aria-label="Radio button for following text input" id="img1" value="1" name="customRadioImg">
-                                                 <img src="images/nave.png" alt="" class="ml-3" width="130">  
-                                            </div>
-                                        </div>
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text" style="border-radius: 5px;">
+                                        <input type="radio" aria-label="Radio button for following text input"
+                                            id="customRadio2" value="I" name="customRadio">
                                     </div>
                                 </div>
+                                <div class="" style="margin-left: 10px; margin-top: 3px; font-size: 17px;">Imagem</div>
+
+                            </div>
+
+                        </div>
+                    </div>
 
 
-                                 <div class="row mt-3" id="textArea">
-                                    <div class="col-12 form-group ">
-                                        <span>Messagem:</span>
-                                            <div class="" style="float: right;">Caracteres restantes <b><span class="caracteres">80</span></b></div>
-                                        
-                                        <div class="input-group">
-                                            <textarea class="form-control contador" aria-label="With textarea" id="messagem" maxlength="80" rows="3" ></textarea>
-                                          </div>
-                                    </div>
-                                </div> 
-                                
+                    <div class="row mt-3" id="img">
+                        <div class="col-12 form-group ">
+                            <div> Escolha sua Figurinha!</div>
 
-                                <div class="row text-center mt-4 ">
-                                    <div class="col-12 form-group">
-                                        <!-- <input type="image" src="images/botaosend.png" alt="" width="70" height="70"> -->
-                                      <button type="submit" id="buttonSign" class="btn btn-primary" class="btn-custom">Enviar</button> 
-                                    </div>
+
+
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <input type="radio" aria-label="Radio button for following text input" id="img2"
+                                        value="2" name="customRadioImg">
+                                    <img src="images/cEdDG.png" class="ml-3" alt="" width="100">
                                 </div>
-                                <div class="row text-center">
-                                    <div class="col-12 ">
-                                       <a id="forgot" href="http://" >Ajuda?</a>
-                                    </div>
+                                <div class="col-6">
+                                    <input type="radio" aria-label="Radio button for following text input" id="img3"
+                                        value="3" name="customRadioImg">
+                                    <img src="images/pe.png" alt="" class="ml-3" width="100">
                                 </div>
                             </div>
-                </form>
+
+                            <div class="row mt-4">
+                                <div class="col-6">
+                                    <input type="radio" aria-label="Radio button for following text input" id="img4"
+                                        value="4" name="customRadioImg">
+                                    <img src="images/rosto.png" class="ml-3" alt="" width="85">
+                                </div>
+                                <div class="col-6">
+                                    <input type="radio" aria-label="Radio button for following text input" id="img1"
+                                        value="1" name="customRadioImg">
+                                    <img src="images/nave.png" alt="" class="ml-3" width="130">
+                                </div>
+                            </div>
+
+                            <div class="row ">
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label for="velocity">Qual a velocidade ?</label>
+                                        <select class="form-control" id="velocity" style="width: auto;">
+                                            <option value="5">1x</option>
+                                            <option value="4">2x</option>
+                                            <option value="3">3x</option>
+                                            <option value="2">4x</option>
+                                            <option value="1">5x</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-6 text-center">
+                                    <div class="form-group">
+                                        <div>Qual direção?</div>
+                                        <div class="form-check form-check-inline mt-2">
+                                            <input class="form-check-input" type="radio" name="directionRadios" checked
+                                                id="directionRadios" value="1">
+                                            <label class="form-check-label" for="directionRadios">
+                                                <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="directionRadios"
+                                                id="directionRadios" value="0">
+                                            <label class="form-check-label" for="directionRadios">
+                                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                            </label>
+                                        </div>
+                                        </select>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-12 text-center">
+                                    <div class="form-group">
+                                        <div>Quantas voltas?</div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="slidesRadios"
+                                                id="slidesRadios" value="1" checked>
+                                            <label class="form-check-label" for="slidesRadios">
+                                                1
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="slidesRadios"
+                                                id="slidesRadios" value="2">
+                                            <label class="form-check-label" for="slidesRadios">
+                                                2
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="slidesRadios"
+                                                id="slidesRadios" value="3">
+                                            <label class="form-check-label" for="slidesRadios">
+                                                3
+                                            </label>
+                                        </div>
+
+                                        </select>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row mt-3" id="textArea">
+                        <div class="col-12 form-group ">
+                            <span>Messagem:</span>
+                            <div class="" style="float: right;">Caracteres restantes <b><span
+                                        class="caracteres">80</span></b></div>
+
+                            <div class="input-group">
+                                <textarea class="form-control contador" aria-label="With textarea" id="messagem"
+                                    maxlength="80" rows="3"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row text-center mt-4 ">
+                        <div class="col-12 form-group">
+                            <!-- <input type="image" src="images/botaosend.png" alt="" width="70" height="70"> -->
+                            <button type="submit" id="buttonSign" class="btn btn-primary"
+                                class="btn-custom">Enviar</button>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-12 ">
+                            <a id="forgot" href="http://">Ajuda?</a>
+                        </div>
+                    </div>
             </div>
-            </div>
-            
-         
+            </form>
+        </div>
+    </div>
+
+
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

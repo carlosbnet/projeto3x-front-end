@@ -28,17 +28,19 @@ body{
     border: solid 1px white;
     border-radius: 15px;
     width:600px; /* Valor da Largura */
-    height:700px; /* Valor da Altura */
+    height:850px; /* Valor da Altura */
     background:#ffffff;
     margin-top: 170px;
     margin-left: 280px;
     color:#fff;
     
-   
+    -webkit-box-shadow: -2px 1px 11px 0px rgba(50, 50, 50, 1);
+    -moz-box-shadow:    -2px 1px 11px 0px rgba(50, 50, 50, 1);
+    box-shadow:         -2px 1px 11px 0px rgba(50, 50, 50, 1);
     
 }
 .borda{
-    border: 10px solid black;
+    border: 2px solid black;
 }
 
 @supports (-moz-appearance:none) {
@@ -58,13 +60,13 @@ body{
 .cicle{
     
     position: absolute;
-    margin-top: -700px;
+    margin-top: -850px;
     width: 130px;
     height: 130px;
     border-radius: 100%;
     background: rgb(255, 255, 255);
-    padding-top: 22px;
-    padding-left: 27px;
+    padding-top: 13px;
+    padding-left: 25px;
     
 }
 

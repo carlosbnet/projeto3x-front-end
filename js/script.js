@@ -30,10 +30,12 @@ function getRandomArbitrary(min, max) {
 
 
 
-
+//Troca as ordens
 $(window).on("load", function () {
     $("#textArea").show();
     $("#img").hide();
+    
+
 });
 
 
@@ -136,6 +138,11 @@ function createObj() {
     obj.name = $("#name").val();
     obj.type = $("input[name='customRadio']:checked").val();
     obj.codigoMSG = getRandomArbitrary(1,5000);
+    obj.quantSlides = $("input[name='slidesRadios']:checked").val();
+    obj.direction = $("input[name='directionRadios']:checked").val();
+    obj.velocity = $("#velocity").val();
+    
+
 
     if (obj.type == "I") {
         
