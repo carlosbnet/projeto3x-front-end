@@ -26,7 +26,9 @@ function getRandomArbitrary(min, max) {
 }
 
 
-
+function Enviado() {
+    alert("Sua Mensagem foi enviada, veja no display a sua mensagem, as vezes custa um pouco!");
+  }
 
 
 
@@ -123,7 +125,7 @@ $(document).ready(function () {
      //   $inputs.prop("disabled", false);
     });
 
-
+    Enviado();
 
     });
 
@@ -141,7 +143,7 @@ function createObj() {
     obj.quantSlides = $("input[name='slidesRadios']:checked").val();
     obj.direction = $("input[name='directionRadios']:checked").val();
     obj.velocity = $("#velocity").val();
-    
+
 
 
     if (obj.type == "I") {
